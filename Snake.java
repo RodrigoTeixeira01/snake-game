@@ -51,7 +51,7 @@ public class Snake extends JFrame implements KeyListener, MouseListener {
 		x = new int[SCREEN_SQUARES*SCREEN_SQUARES];
 		y = new int[SCREEN_SQUARES*SCREEN_SQUARES];
 		
-		setIconImage(new ImageIcon("C:\\Users\\rodri\\eclipse-workspace\\Snake\\src\\snake\\R.png").getImage());
+		setIconImage(new ImageIcon("R.png").getImage());
 		
 		setTitle("Snake Game");
 		setBackground(new Color(100, 100, 100));
@@ -290,7 +290,7 @@ public class Snake extends JFrame implements KeyListener, MouseListener {
 	public void mouseExited(MouseEvent e) {}
 	private void fileIt() {
 		try{
-			scan = new Scanner(new File("C:\\Users\\rodri\\eclipse-workspace\\Snake\\src\\snake\\config.txt"));
+			scan = new Scanner(new File("config.txt"));
 		}catch(Exception e) {}
 	}
 }
